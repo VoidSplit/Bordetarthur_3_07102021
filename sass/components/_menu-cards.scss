@@ -1,4 +1,14 @@
+@for $c from 2 to 5 {
+    @for $i from 2 to 5 {
+        .category:nth-child(#{$c}) {
+            .menu-card:nth-child(#{$i}) {
+                animation-delay: $c * ($c * 0.1s) + $i * 0.15s;
+            }
+        }
+    }
+}
 .menu-card {
+    animation: slidein 0.8s ease-in both;
     position: relative;
     box-shadow: 0 5px 15px #ccc;
     background-color: #fff;
@@ -36,7 +46,23 @@
     }
     .anim-box {
         width: 0px;
-        background-color: red;
+        background-color: #99E2D0;
+        color: #fff;
+        font-size: 1.5rem;
         overflow: hidden;
+        transition: width .5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+            transition: transform 0s;
+        }
+    }
+    &:hover .anim-box {
+        width: 80px;
+        i {
+            transform: rotateZ(360deg);
+            transition: transform .5s;
+        }
     }
 }
