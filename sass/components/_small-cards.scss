@@ -1,0 +1,40 @@
+.s-card {
+    position: relative;
+    background-color: #f8f8f8;
+    box-shadow: 0 5px 15px #ccc;
+    height: 80px;
+    width: calc(100% - 60px);
+    align-self: center;
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    &:hover {
+        background-color: rgb(245, 237, 255);
+        .icon {
+            color: #9356DC;
+        }
+    }
+    .number {
+        background-color: #9356DC;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 0;
+    }
+    .icon {
+        color: rgb(126, 126, 126);
+        font-size: 1.35rem;
+        padding: 0 25px;
+    }
+    p {
+        font-weight: bold;
+    }
+}
