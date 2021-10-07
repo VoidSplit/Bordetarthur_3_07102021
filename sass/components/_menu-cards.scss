@@ -1,0 +1,42 @@
+.menu-card {
+    position: relative;
+    box-shadow: 0 5px 15px #ccc;
+    background-color: #fff;
+    width: calc(100% - 40px);
+    border-radius: 15px;
+    align-self: center;
+    overflow: hidden;
+    margin-bottom: 30px;
+    display: flex;
+    .inner {
+        padding: 15px;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        h1 {
+            font-size: 1.5rem;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        p {
+            width: calc(100% - 50px);
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .price {
+            position: absolute;
+            bottom: 13px;
+            right: 15px;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+    }
+    .anim-box {
+        width: 0px;
+        background-color: red;
+        overflow: hidden;
+    }
+}
