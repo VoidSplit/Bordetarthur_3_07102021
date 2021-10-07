@@ -1,0 +1,110 @@
+#menu {
+    height: 400px;
+    width: 100vw;
+    overflow: hidden;
+    .nav {
+        position: fixed;
+        z-index: 5;
+        background-color: #fff;
+        display: flex;
+        align-items: inherit;
+        justify-content: inherit;
+        height: auto;
+        padding: 15px 20px;
+        .icon {
+            color: #000;
+            height: 50px;
+            width: 50px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            &:hover {
+                background-color: #f8f8f8;
+            }
+        }
+        .logo {
+            width: calc(100% - 100px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .background {
+        position: fixed;
+        margin-top: 80px;
+        height: 320px;
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+.menu-box {
+    background-color: #f8f8f8;
+    width: 100vw;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: absolute;
+    z-index: 2;
+    top: 45vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    .top {
+        display: flex;
+        position: relative;
+        padding: 25px 0 15px 20px;
+        h1 {
+            font-family: 'Shrikhand', cursive;
+            font-weight: 100;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            height: 80px;
+            aspect-ratio: 1/1;
+        }
+    }
+    .category {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+        >p {
+            text-transform: uppercase;
+            width: calc(100% - 40px);
+            align-self: center;
+            position: relative;
+            margin-bottom: 30px;
+            &::after {
+                content: '';
+                position: absolute;
+                height: 4px;
+                width: 300px;
+                background-color: #99E2D0;
+                bottom: -10px;
+                left: 0;
+                width: 40px;
+            }
+        }
+    }
+    .buy-button {
+        align-self: center;
+        border: none;
+        border-radius: 35px;
+        padding: 20px 35px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.2rem;
+        background: linear-gradient(354deg, #9356DC 0%, #FF79DA 100%);
+        box-shadow: 0 5px 15px #ccc;
+        margin-bottom: 55px;
+    }
+}
