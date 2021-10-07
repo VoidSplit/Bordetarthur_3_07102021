@@ -1,0 +1,19 @@
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0 10px #9e9e9e;
+}
+.location {
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    .location__icon {
+        padding-right: 10px;
+    }
+}

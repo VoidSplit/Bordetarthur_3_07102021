@@ -1,0 +1,35 @@
+section#explore {
+    background-color: #f8f8f8;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .explore__title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .explore__description {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .explore__button {
+        border: none;
+        border-radius: 250px;
+        color: #fff;
+        font-size: 1.1em;
+        padding: 18px 25px;
+        background: $primaire;
+        background: linear-gradient(354deg, $primaire 0%, $secondaire 100%);
+        box-shadow: 0 5px 15px rgb(204, 204, 204);
+        margin-bottom: 20px;
+    }
+}
+section#working,
+section#restaurants {
+    display: flex;
+    flex-direction: column;
+    >h1 {
+        padding: 0 0 30px 30px;
+    }
+}

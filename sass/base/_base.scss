@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+}
+section {
+    padding-top: 40px;
+    width: 100vw;
+}
+footer {
+    background-color: #272727;
+    padding: 25px;
+    .logo {
+        h1 {
+            font-family: 'Shrikhand', cursive;
+            color: #fff;
+            font-size: 1.5em;
+            font-weight: 100;
+        }
+    }
+    ul {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        li {
+            padding-bottom: .5rem;
+            a {
+                .icon {
+                    padding-right: 1rem;
+                }
+                display: flex;
+                color: #fff;
+            }
+        }
+    }
+}
