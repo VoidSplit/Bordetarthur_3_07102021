@@ -111,3 +111,8 @@
         margin-bottom: 55px;
     }
 }
+@media screen and (max-width: 310px) {
+    #menu .nav .logo {
+        width: 100%;
+    }
+}
