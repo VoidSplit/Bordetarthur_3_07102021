@@ -13,3 +13,55 @@
         opacity: 1;
     }
 }
+@keyframes loaderSize {
+    0% {
+        transform: scale(1) rotate(0);
+    }
+    16% {
+        transform: scale(0) rotate(0);
+    }
+    50% {
+        transform: scale(1) rotate(0);
+    }
+    80% {
+        transform: scale(1) rotate(-360deg);
+    }
+    100% {
+        transform: scale(1) rotate(-360deg);
+    }
+}
+@keyframes loaderColor {
+    5% {
+        color: #9356DC;
+    }
+    10% {
+        color: #FF79DA;
+    }
+    39% {
+        color: #FF79DA;
+    }
+    40% {
+        color: #99E2D0;
+    }
+    70% {
+        color: #99E2D0;
+    }
+    80% {
+        color: #9356DC;
+    }
+    100% {
+        color: #9356DC;
+    }
+}
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        z-index: -5;
+    }
+}

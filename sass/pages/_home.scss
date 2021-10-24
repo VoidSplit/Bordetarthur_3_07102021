@@ -23,6 +23,9 @@ section#explore {
         background: linear-gradient(354deg, $primaire 0%, $secondaire 100%);
         box-shadow: 0 5px 15px rgb(204, 204, 204);
         margin-bottom: 20px;
+        &:hover {
+            background: linear-gradient(354deg, lighten($primaire, 5%) 0%, lighten($secondaire, 5%) 100%);
+        }
     }
 }
 section#working,

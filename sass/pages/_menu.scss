@@ -37,11 +37,12 @@
     .background {
         position: fixed;
         margin-top: 80px;
-        height: 320px;
+        height: 45vh;
+        width: 100vw;
         img {
             object-fit: cover;
-            height: 100%;
             width: 100%;
+            height: 100%;
         }
     }
 }
@@ -106,9 +107,12 @@
         color: #fff;
         font-weight: 400;
         font-size: 1.2rem;
-        background: linear-gradient(354deg, #9356DC 0%, #FF79DA 100%);
+        background: linear-gradient(354deg, $primaire 0%, $secondaire 100%);
         box-shadow: 0 5px 15px #ccc;
         margin-bottom: 55px;
+        &:hover {
+            background: linear-gradient(354deg, lighten($primaire, 5%) 0%, lighten($secondaire, 5%) 100%);
+        }
     }
 }
 @media screen and (max-width: 310px) {
