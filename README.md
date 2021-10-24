@@ -7,4 +7,16 @@ Ohmyfood! is an online meal ordering company. It allows users to users to compos
 ___
 My job is to transform the model into a mobile site and to add 4 menus with their animations. I use the **Sass** preprocessor to have a more understandable css.
 ## What technologies have I used?
-[WIP]
+In terms of languages I used html css and sass, I was forbidden to use javascript.
+
+I used flex to have a clean environment and FontAwesome to have icons to use.
+
+___
+## What design of loader did I choose?
+I made a simple loader design that you can see in the link below.
+
+https://codepen.io/VoidSplit/pen/XWaNvMd
+
+__Here is an example:__
+
+![Alt Text](https://i.imgur.com/euYlyqq.gif)
