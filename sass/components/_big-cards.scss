@@ -51,20 +51,25 @@
             justify-content: center;
             font-size: 1.5rem;
             color: #353535;
-            i:nth-child(2) {
-                display: none;
+            i {
+                position: absolute;
+                transition: opacity .5s;
             }
-            &.liked {
-                i:nth-child(2) {
-                    display: block;
-                }
-                i:nth-child(1) {
-                    display: none;
-                }
+            i:nth-child(2) {
+                transition: opacity .5s;
+                opacity: 0;
                 background: linear-gradient(354deg, #9356DC 0%, #FF79DA 100%);
                 background-clip: text;
                 -webkit-background-clip: text;
                 color: transparent;
+            }
+            &.liked, &:hover {
+                i:nth-child(2) {
+                    opacity: 1;
+                }
+                i:nth-child(1) {
+                    opacity: 0;
+                }
             }
         }
     }

@@ -69,12 +69,34 @@
             width: 100%;
         }
         .icon {
+            height: 80px;
+            aspect-ratio: 1/1;
+            width: 78px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.5rem;
-            height: 80px;
-            aspect-ratio: 1/1;
+            color: #353535;
+            i {
+                position: absolute;
+                transition: opacity .5s;
+            }
+            i:nth-child(2) {
+                transition: opacity .5s;
+                opacity: 0;
+                background: linear-gradient(354deg, #9356DC 0%, #FF79DA 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+            &.liked, &:hover {
+                i:nth-child(2) {
+                    opacity: 1;
+                }
+                i:nth-child(1) {
+                    opacity: 0;
+                }
+            }
         }
     }
     .category {
